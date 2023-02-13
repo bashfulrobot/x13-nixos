@@ -1,5 +1,9 @@
 # NixOs CFG Files
 
+## Credit
+
+- `Install.sh`: <https://gitlab.com/ahoneybun/nyxi-installer>
+
 ## Generate a Password
 
 ```
@@ -29,17 +33,17 @@ OK
 OK
 ```
 
-https://nixos.org/manual/nixos/stable/index.html#sec-installation-booting-networking
+<https://nixos.org/manual/nixos/stable/index.html#sec-installation-booting-networking>
 
 ## Start the installer
 
 ```sh
-sh <(curl -L https://gitlab.com/ahoneybun/nyxi-installer/-/raw/main/install.sh)
+sh <(curl -L https://raw.githubusercontent.com/bashfulrobot/x13-nixos/main/install.sh)
 ```
 
 The following will happen:
 
-- Clear partition table for `/dev/***`. 
+- Clear partition table for `/dev/***`.
 - Creates a GPT partition table for `/dev/***`.
 - Creates a 1GB EFI partiton at `/dev/***1`.
 - Creates a 4GB Swap partition at `/dev/***3`.
