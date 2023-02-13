@@ -76,8 +76,20 @@ sudo nixos-generate-config --root /mnt
 echo "Default username and password are in the configuration.nix file"
 echo "Password is hashed so it is not plaintext"
 
-curl https://gitlab.com/ahoneybun/nix-configs/-/raw/main/configuration.nix > configuration.nix; sudo mv -f configuration.nix /mnt/etc/nixos/
-curl https://gitlab.com/ahoneybun/nix-configs/-/raw/main/programs.nix > programs.nix; sudo mv -f programs.nix /mnt/etc/nixos/
+curl https://raw.githubusercontent.com/bashfulrobot/x13-nixos/main/etc/nixos/configuration.nix >configuration.nix
+sudo mv -f configuration.nix /mnt/etc/nixos/
+curl https://raw.githubusercontent.com/bashfulrobot/x13-nixos/main/etc/nixos/firewall.nix >firewall.nix
+sudo mv -f firewall.nix /mnt/etc/nixos/
+curl https://raw.githubusercontent.com/bashfulrobot/x13-nixos/main/etc/nixos/flake.nix >flake.nix
+sudo mv -f flake.nix /mnt/etc/nixos/
+curl https://raw.githubusercontent.com/bashfulrobot/x13-nixos/main/etc/nixos/flatpak.nix >flatpak.nix
+sudo mv -f flatpak.nix /mnt/etc/nixos/
+curl https://raw.githubusercontent.com/bashfulrobot/x13-nixos/main/etc/nixos/flatpak.nix >flatpak.nix
+sudo mv -f flatpak.nix /mnt/etc/nixos/
+curl https://raw.githubusercontent.com/bashfulrobot/x13-nixos/main/etc/nixos/pantheon-desktop.nix >pantheon-desktop.nix
+sudo mv -f pantheon-desktop.nix /mnt/etc/nixos/
+curl https://raw.githubusercontent.com/bashfulrobot/x13-nixos/main/etc/nixos/applications.nix >applications.nix
+sudo mv -f applications.nix /mnt/etc/nixos/
 
 # Install
 sudo nixos-install
