@@ -53,9 +53,6 @@
   # Enable firmware updates
   services.fwupd.enable = true;
 
-  # Enable TLP
-  services.tlp.enable = true;
-
   # Enable SSH
   services.openssh = {
     enable = true;
