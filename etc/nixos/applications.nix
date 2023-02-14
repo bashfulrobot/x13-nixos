@@ -15,6 +15,7 @@
   environment.systemPackages = with pkgs; [
     wget
     google-chrome
+    zoom-us
     vscode
     ripgrep
     fd
